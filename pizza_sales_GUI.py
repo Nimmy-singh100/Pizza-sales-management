@@ -8,7 +8,7 @@ def connect_db():
         conn = mysql.connector.connect(
             host="localhost",
             user="root",           # change if you use another MySQL user
-            password="#*Fulkumari*#12",           # add your MySQL password here
+            password="************",           # add your MySQL password here
             database="pizzahut"    # ✅ your actual database name
         )
         status_label.config(text="✅ Connected to Database", fg="green")
@@ -138,6 +138,7 @@ status_label.pack(side=tk.BOTTOM, pady=5)
 connect_db()
 
 root.mainloop()
+
 
 
 
